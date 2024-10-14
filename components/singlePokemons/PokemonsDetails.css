@@ -1,0 +1,24 @@
+
+p{
+    letter-spacing: 0rem;
+}
+
+img{
+    height: 300px;
+    width: 400px;
+}
+.details-wrapper {
+    background-color: #dfc7baf1;
+    border-radius: 5px;
+}
+.pokebg-single{
+    background-color: #fff;
+    border-radius: 5px;
+
+}
+ul{
+    list-style: none;
+}
+.types-element{
+    text-decoration: underline;
+}

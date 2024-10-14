@@ -1,0 +1,9 @@
+.lodo-img{
+    height: 55px;
+    width: 220px;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    background-color: #e9de8b;
+}

@@ -1,0 +1,13 @@
+
+
+.pagination{
+    transition: 1.5s;
+
+}
+
+
+.pagination:hover{
+    background-color: black;
+    color: yellow;
+    opacity: 1;
+}

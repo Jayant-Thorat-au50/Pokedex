@@ -1,0 +1,18 @@
+
+div{
+    flex-basis: 20%;
+    letter-spacing: 0.05rem;
+}
+
+h4{
+    text-decoration:underline;
+}
+.pokemon{
+    height: 150px;
+    width: 210px;
+
+}
+.pokebg{
+    background-color: rgb(243, 200, 200);
+    border-radius: 5px;
+}
