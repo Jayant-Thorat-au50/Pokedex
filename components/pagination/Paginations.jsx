@@ -9,7 +9,11 @@ function Paginations({navtype,disabled,onclick}) {
        onClick={onclick}
      
       >
-        {navtype}
+    
+    
+    {navtype}
+
+
       </button>
     )
 }

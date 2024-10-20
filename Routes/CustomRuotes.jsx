@@ -11,6 +11,7 @@ function CustomRuotes() {
         
         <Routes>
           <Route path="/" element={<PokemonList/>}/>
+          <Route path="/list/:Next_url" element={<PokemonList/>}/>
           <Route path="/pokemon/:name" element={<PokemonsDetails/>}/>
           <Route path="/*" element={<PageNotFound/>}/>
         </Routes>

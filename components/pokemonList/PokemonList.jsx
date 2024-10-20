@@ -1,13 +1,18 @@
 import React from "react";
 import PokemonTobeListed from "../PokemonToBeListed/PokemonTobeListed";
 
+
 import "./PokemonList.css";
 import usePokemonList from "../../hooks/usePokemonList";
 import Paginations from "../pagination/Paginations";
 import Loader from "../Loader";
+import { useParams } from "react-router-dom";
 
 function PokemonList() {
+
+  const {Next_url} = useParams()
   const { pokemonListState, setPokemonListState } = usePokemonList();
+
 
   return (
     <>
@@ -45,6 +50,7 @@ function PokemonList() {
           <Paginations
             navtype="Next"
             disabled={pokemonListState.nextUrl == null ? true : false}
+            next={pokemonListState.nextUrl}
             onclick={() =>
               setPokemonListState({
                 ...pokemonListState,

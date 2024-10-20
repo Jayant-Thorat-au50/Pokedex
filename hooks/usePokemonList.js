@@ -1,8 +1,8 @@
-import React from "react";
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function usePokemonList() {
+function usePokemonList(Next_url) {
   const [pokemonListState, setPokemonListState] = useState({
     isLoading: true,
     pokemon: [],
@@ -29,7 +29,7 @@ function usePokemonList() {
     //for the next set of pokemons
     setPokemonListState((state) => ({
       ...state,
-      nextUrl: response.data.next,
+      nextUrl:response.data.next,
       prevUrl: response.data.previous,
     }));
 
