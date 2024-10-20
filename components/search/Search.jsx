@@ -10,8 +10,8 @@ const [searchState,setSearchState] = useState({
   
   return (
     <>
-      <div className="  col-12 py-3   ">
-        <div className="pokemon-name-search d-flex gap-2 mx-auto col-6  ">
+      <div className="  col-lg-12 col-8 py-3      ">
+        <div className="pokemon-name-search d-flex gap-2 mx-auto  col-6  ">
           <input
             type="text"
             placeholder="Pokemon name....."

@@ -15,14 +15,14 @@ function PokemonsDetails() {
       ) : isLoading ? (
         <Loader />
       ) : (
-        <div className=" mx-auto  col-8 d-flex justify-content-center flex-column  align-items-center  my-5 Loader  ">
+        <div className=" mx-auto col-lg-8 col-10 d-flex justify-content-center flex-column  align-items-center  my-5 Loader ">
           <div className="col-12 my-3 d-flex flex-lg-row flex-column align-items-center details-wrapper">
             <div className="col-7 py-lg-4  d-flex justify-content-center align-items-center flex-column ">
               <h2>{pokemon.name}</h2>
               <img src={pokemon.img} className="pokebg-single p-2" alt="" />
             </div>
-            <div className="d-flex justify-content-center  col-5 align-items-center flex-column">
-              <div className="d-flex align-items-start flex-column">
+            <div className="d-flex justify-content-center col-lg-5 col-12 align-items-center flex-column ">
+              <div className="d-flex align-items-start flex-column  col-7 col-lg-10 ">
                 <span className="d-flex">
                   <p className="h4">height :</p> &nbsp;{" "}
                   <p className="h4">{pokemon.height}</p>
@@ -31,11 +31,11 @@ function PokemonsDetails() {
                   <p className="h4">weight :</p> &nbsp;{" "}
                   <p className="h4">{pokemon.weight}</p>
                 </span>
-                <span className="d-flex justify-content-center">
-                  <p className="h4">type :</p> &nbsp;{" "}
+                <span className="d-flex ">
+                  <p className="h4">type :{' '} </p>
                   <div className="d-flex h4 gap-2">
                     {pokemon.type.map((ele, index) => {
-                      return <p key={index}>{ele}</p>;
+                      return <p key={index}>&nbsp;{ ele}</p>;
                     })}
                   </div>
                 </span>
@@ -43,7 +43,7 @@ function PokemonsDetails() {
             </div>
           </div>
 
-          <div className="col-12 my-lg-3 p-2 ">
+          <div className="col-12 my-lg-3 p-2 border border-2 border-dark pokemon-types-list-wrapper ">
             <div className="text-dark h3 d-flex gap-1">
               Other {pokemon.similarTypePokemons.length} &nbsp;{" "}
               {pokemon.type.map((ele, index) => {
@@ -57,7 +57,7 @@ function PokemonsDetails() {
                   <Link
                     to={`/pokemon/${p.pokemon.name}`}
                     key={p.pokemon.name}
-                    className="text-dark col-3 d-flex justify-content-start align-items-center flex-wrap"
+                    className="text-dark col-lg-3 col-6 d-flex justify-content-start align-items-center flex-wrap"
                   >
                     <li className=" types-element">{p.pokemon.name}</li>
                   </Link>

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function PokemonTobeListed({ name, image, id }) {
   return (
-    <div className="d-flex justify-content-center     align-items-center flex-column text-dark my-4">
+    <div className="d-flex justify-content-center    align-items-center flex-column text-dark my-lg-4 my-2">
       <Link to={`pokemon/${name}`} className="text-dark">
         <div className="d-flex justify-content-center py-2 pokebg align-items-center flex-column gap-1">
           <h4>{name}</h4>

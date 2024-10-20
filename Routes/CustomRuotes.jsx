@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes,Route } from 'react-router-dom'
 import PokemonList from '../components/pokemonList/PokemonList'
-import PokemonsDetails from '../components/singlePokemons/pokemonsDetails'
+import PokemonsDetails from '../components/singlePokemons/PokemonsDetails'
 import PageNotFound from '../components/pageNotFound'
 
 

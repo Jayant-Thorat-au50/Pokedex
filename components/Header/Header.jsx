@@ -6,8 +6,8 @@ import "./Header.css";
 
 function Header() {
   return (
-    <section className="col-12 d-flex header px-1 me-3 flex-lg-row flex-column  ">
-      <div className=" d-flex col-2 justify-content-center align-items-center border border-success mx-auto my-2">
+    <section className="col-12 p-1 d-flex header px-1 me-3 flex-lg-row flex-column align-items-lg-center align-items-start   ">
+      <div className=" d-flex col-2 justify-content-center align-items-center  mx-auto my-2">
         <Link to={"/"} className="text-dark">
           <img src="./download.png" className="lodo-img" alt="" />
         </Link>

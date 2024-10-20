@@ -22,3 +22,14 @@ ul{
 .types-element{
     text-decoration: underline;
 }
+
+.pokemon-types-list-wrapper{
+    box-shadow: #bbbbbb -15px -9px 5px;
+}
+
+@media screen and (max-width : 768px){
+    img{
+        height: 200px;
+        width: 300px;
+    }
+}
