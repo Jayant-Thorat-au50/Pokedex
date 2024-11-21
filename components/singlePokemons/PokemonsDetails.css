@@ -27,7 +27,7 @@ ul{
     box-shadow: #bbbbbb -15px -9px 5px;
 }
 
-@media screen and (max-width : 768px){
+@media screen and (max-width : 430px){
     img{
         height: 200px;
         width: 300px;

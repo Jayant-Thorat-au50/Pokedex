@@ -17,9 +17,13 @@ h4{
     border-radius: 5px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 430px){
     div{
         flex-basis: 50%;
         letter-spacing: 0.05rem;
+    }
+    .pokemon{
+        height: 90px;
+        width: 150px;
     }
 }

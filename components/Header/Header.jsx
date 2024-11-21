@@ -13,7 +13,7 @@ function Header() {
         </Link>
       </div>
 
-      <div className=" col-10   ">
+      <div className=" col-lg-10 col-12   ">
         <Search />
       </div>
     </section>
